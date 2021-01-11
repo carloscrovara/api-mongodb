@@ -17,7 +17,7 @@ cursosCtrl.updateCurso = async(req, res) =>{
 
 cursosCtrl.traerCursos = async (req, res)=>{
     let cursos = await Curso.find({});
-    res.json(cursos);
+    res.json({status: 200, data: cursos});
 }
 
 cursosCtrl.deleteCurso = async(req, res) =>{
